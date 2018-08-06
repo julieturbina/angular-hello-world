@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+<h2>
+  {{ content }}
+</h2>
+<ul>
+    <li *ngFor="let animal of animals">
+        <span> {{ animal.name }} </span>
+        <small> ({{ animal.category }}) </small>
+    </li>
+</ul>
+
+<!-- testing event binding -->
+<app-my-event-binding></app-my-event-binding>
+<!-- testing mixed binding -->
+<app-my-mixed-binding></app-my-mixed-binding>
+<!-- testing nested binding -->
+<app-app-my-nested></app-app-my-nested>
+<!-- testing property binding -->
+<app-my-property-binding></app-my-property-binding>
+<!-- We are testing a 2-way Binding here -->
+<app-my-two-way-binding></app-my-two-way-binding>
