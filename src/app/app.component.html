@@ -8,13 +8,14 @@
         <small> ({{ animal.category }}) </small>
     </li>
 </ul>
+<p *ngIf="animals.length > 3"> There are many animals, more than 3!!! </p>
 
 <!-- testing event binding -->
 <app-my-event-binding></app-my-event-binding>
 <!-- testing mixed binding -->
 <app-my-mixed-binding></app-my-mixed-binding>
 <!-- testing nested binding -->
-<app-app-my-nested></app-app-my-nested>
+<!-- <app-app-my-nested></app-app-my-nested> -->
 <!-- testing property binding -->
 <app-my-property-binding></app-my-property-binding>
 <!-- We are testing a 2-way Binding here -->

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export default class AppComponent {
-  title = 'angular-helloworld';
+  title = 'Welcoms to Angular-helloworld';
   content = 'A new world is waiting for you!';
   animals: Array<Object> = [
     {
