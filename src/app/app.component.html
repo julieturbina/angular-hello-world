@@ -1,7 +1,8 @@
-<h1>{{title}}</h1>
+<h1>Welcome to {{title}}</h1>
 <h2>
   {{ content }}
 </h2>
+
 <ul>
     <li *ngFor="let animal of animals">
         <span> {{ animal.name }} </span>
@@ -10,13 +11,18 @@
 </ul>
 <p *ngIf="animals.length > 3"> There are many animals, more than 3!!! </p>
 
+
+  <!-- testing nested binding -->
+  <app-my-nested></app-my-nested>
+
+
 <!-- testing event binding -->
-<app-my-event-binding></app-my-event-binding>
+<!-- <app-my-event-binding></app-my-event-binding>
 <!-- testing mixed binding -->
-<app-my-mixed-binding></app-my-mixed-binding>
+<!-- <app-my-mixed-binding></app-my-mixed-binding> -->
 <!-- testing nested binding -->
-<!-- <app-app-my-nested></app-app-my-nested> -->
+<!-- <app-my-nested></app-my-nested> -->
 <!-- testing property binding -->
-<app-my-property-binding></app-my-property-binding>
+<!-- <app-my-property-binding></app-my-property-binding>
 <!-- We are testing a 2-way Binding here -->
-<app-my-two-way-binding></app-my-two-way-binding>
+<!-- <app-my-two-way-binding></app-my-two-way-binding> --> 
